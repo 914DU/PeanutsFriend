@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.19" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.16"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Peanutsfriend View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="peanutsfriendViewController" customModule="song" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="peanuts" translatesAutoresizingMaskIntoConstraints="NO" id="bsJ-Zf-ABd">
+                                <rect key="frame" x="0.0" y="20" width="185" height="132"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="snoopytype" translatesAutoresizingMaskIntoConstraints="NO" id="L0Z-dq-gHc">
+                                <rect key="frame" x="0.0" y="154" width="375" height="321"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="21" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="mIa-sI-ltw">
+                                <rect key="frame" x="53" y="238" width="100" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" smartDashesType="yes"/>
+                                <connections>
+                                    <action selector="nameTextField:" destination="BYZ-38-t0r" eventType="touchDragInside" id="3Mh-kW-JSc"/>
+                                    <action selector="nameTextField:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3W1-Lx-KAc"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d3G-gh-Taz">
+                                <rect key="frame" x="28" y="214" width="82" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="19"/>
+                                <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="輸入你的名字 幫你找出誰是你的花生家族好朋友？" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Dfj-xV-JY6" userLabel="Text View（question）">
+                                <rect key="frame" x="187" y="40" width="188" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Snoopyhead" translatesAutoresizingMaskIntoConstraints="NO" id="kki-3T-dwI">
+                                <rect key="frame" x="234" y="214" width="66" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="史努比：  一個思維天馬行空，超級自信的小獵犬。作為第一次世界大戰的王牌飛行員，他與臭名昭著的紅色男爵在天空中激戰。作為狗窩頂上的沉思者，他生活豐富多彩：寫小說，去月球旅行，無時無刻不在幻想著向隔壁的貓復仇。" translatesAutoresizingMaskIntoConstraints="NO" id="M6n-rO-fT5" userLabel="Text View（snoopy）">
+                                <rect key="frame" x="6" y="486" width="260" height="173"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="莎莉：  是查理的妹妹，做事不按牌理出牌的她常常讓大家傷透腦筋，不過她總是能用最簡單的方法解決事情。個性直接又強悍的她非常迷戀奈勒斯" translatesAutoresizingMaskIntoConstraints="NO" id="guZ-cf-kdY" userLabel="Text View（Sally）">
+                                <rect key="frame" x="16" y="486" width="250" height="153"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="查理布朗：  心地善良、多愁善感又好相處，所以他也常常被朋友揶揄，不過卻也贏得不少友誼，雖然他無論做什麼常常都失敗，但是他從不放棄！" translatesAutoresizingMaskIntoConstraints="NO" id="TiE-a8-xvz" userLabel="Text View（Charlie）">
+                                <rect key="frame" x="6" y="486" width="260" height="145"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p6e-R2-2qj" userLabel="Text View（woodstock）">
+                                <rect key="frame" x="6" y="483" width="260" height="164"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">糊塗塌客 :  
+是隻淘氣愛開玩笑的小候鳥，不過常常忘記要飛回故鄉。他是史努比最好的朋友也是忠實得力的秘書，而它說的話也只有史努比聽得懂，喜歡在史努比的狗食盆裡泡澡還有跟史努比玩球。 
+</string>
+                                <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q67-UM-GZc">
+                                <rect key="frame" x="129" y="522" width="116" height="109"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="21"/>
+                                <state key="normal" title="Send" backgroundImage="send">
+                                    <color key="titleColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendPressed:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="0CD-9E-sfW"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PtF-s1-wfi">
+                                <rect key="frame" x="274" y="527" width="93" height="104"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
+                                <state key="normal" title="Return" backgroundImage="Woodstock">
+                                    <color key="titleColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="returnBotton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1aL-ry-oKB"/>
+                                </connections>
+                            </button>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sallyhead" translatesAutoresizingMaskIntoConstraints="NO" id="7DU-94-RLz">
+                                <rect key="frame" x="223" y="219" width="77" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="charliehead" translatesAutoresizingMaskIntoConstraints="NO" id="hLj-Qa-jux">
+                                <rect key="frame" x="233" y="221" width="67" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="woodstockhead" translatesAutoresizingMaskIntoConstraints="NO" id="ogY-U6-Luy">
+                                <rect key="frame" x="241" y="227" width="67" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="charlieHeadImageView" destination="hLj-Qa-jux" id="vNZ-d8-psf"/>
+                        <outlet property="charlieTextField" destination="TiE-a8-xvz" id="8Wz-cf-8ok"/>
+                        <outlet property="nameTextField" destination="mIa-sI-ltw" id="aTK-ie-vKW"/>
+                        <outlet property="returnBotton" destination="PtF-s1-wfi" id="cbO-vb-Zxc"/>
+                        <outlet property="sallyHeadImageView" destination="7DU-94-RLz" id="uBr-9q-zf6"/>
+                        <outlet property="sallyTextField" destination="guZ-cf-kdY" id="t0a-86-0mV"/>
+                        <outlet property="sendButtom" destination="q67-UM-GZc" id="Uh7-QM-EPm"/>
+                        <outlet property="snoopyHeadImageView" destination="kki-3T-dwI" id="fCE-qN-ZPW"/>
+                        <outlet property="snoopyTextField" destination="M6n-rO-fT5" id="zuL-Hd-bSv"/>
+                        <outlet property="titleTextView" destination="Dfj-xV-JY6" id="MFA-un-b4e"/>
+                        <outlet property="walkImageView" destination="bsJ-Zf-ABd" id="1sU-xb-rwv"/>
+                        <outlet property="woodstockHeadImageView" destination="ogY-U6-Luy" id="0Oh-46-59q"/>
+                        <outlet property="woodstockTextField" destination="p6e-R2-2qj" id="BxY-oc-hIF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="37.600000000000001" y="135.38230884557723"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Snoopyhead" width="229" height="195"/>
+        <image name="Woodstock" width="220" height="238"/>
+        <image name="charliehead" width="466" height="477"/>
+        <image name="peanuts" width="499" height="353"/>
+        <image name="sallyhead" width="434" height="373"/>
+        <image name="send" width="640" height="640"/>
+        <image name="snoopytype" width="449" height="413"/>
+        <image name="woodstockhead" width="209" height="284"/>
+    </resources>
+</document>
